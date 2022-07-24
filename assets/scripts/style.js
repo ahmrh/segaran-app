@@ -16,7 +16,7 @@ menuToggle.addEventListener("click",() =>{
 
 
 function closeNav() {
-    aside.style.width= "4%"
+    aside.style.width= "3%"
     aside.setAttribute("state", "closed")
 
     main.style.marginLeft= "0"
