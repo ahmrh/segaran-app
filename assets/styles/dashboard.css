@@ -12,11 +12,12 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     
 }
 .card{
-    width: 224px;
-    height: 114px;
+    width: 15rem;
+    height: 7rem;
 
     text-align: center;
 }   
@@ -32,8 +33,6 @@ section{
 }
 
 .table{
-    width: 75vw;
-    height: auto;
     
     margin: 1rem 0px;
     display: flex;

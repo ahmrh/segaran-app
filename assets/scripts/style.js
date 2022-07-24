@@ -13,13 +13,12 @@ menuToggle.addEventListener("click",() =>{
         openNav()
 })
 
-
-
 function closeNav() {
-    aside.style.width= "3%"
+    aside.style.width= "5%"
     aside.setAttribute("state", "closed")
 
-    main.style.marginLeft= "0"
+    main.style.marginLeft= "5%"
+    main.style.width = "90%"
     menuToggle.style.transform= "rotate(180deg)"
     logout.style.transform= "rotate(180deg)"
     logout.removeAttribute("hidden")
@@ -29,11 +28,12 @@ function closeNav() {
 }
 
 function openNav() {
-    aside.style.width= "auto"
+    aside.style.width= "15%"
     aside.setAttribute("state", "open")
     
 
-    main.style.marginLeft= "20vw"
+    main.style.marginLeft= "18%"
+    main.style.width = "77%"
     menuToggle.style.transform= "rotate(360deg)"
     logout.style.transform= "rotate(360deg)"
     logout.setAttribute("hidden", "")
@@ -45,8 +45,7 @@ function hide(){
     for(var i=0; i<navHide.length; i++){
         
     navHide[i].setAttribute("hidden", "")
-
-        
+ 
     }
 }
 
@@ -56,3 +55,7 @@ function unhide(){
     }
 }
 
+navItem = document.querySelectorAll("aside nav li")
+function navChose(){
+    
+}
