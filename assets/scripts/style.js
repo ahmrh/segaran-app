@@ -37,7 +37,6 @@ function openNav() {
     menuToggle.style.transform= "rotate(360deg)"
     logout.style.transform= "rotate(360deg)"
     logout.setAttribute("hidden", "")
-
     unhide()
 }
 
@@ -45,7 +44,7 @@ function hide(){
     for(var i=0; i<navHide.length; i++){
         
     navHide[i].setAttribute("hidden", "")
- 
+
     }
 }
 
@@ -56,6 +55,12 @@ function unhide(){
 }
 
 navItem = document.querySelectorAll("aside nav li")
-function navChose(){
-    
+navIcon = document.querySelectorAll("nav ul li img")
+
+for(var i=0; i<navItem.length; i++){
+    navItemChild = navItem[i].children
+    if(navItem[i].getAttribute("chosen") == "true"){
+        navItemChild[0].removeAttribute("hidden")
+    }
 }
+

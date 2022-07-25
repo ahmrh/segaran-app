@@ -18,6 +18,7 @@ body{
     --timing: ease-out
 }
 
+
 [hidden]{
     display: none;
 }
@@ -25,6 +26,12 @@ body{
 .button:hover{
     cursor: pointer;
     opacity: 0.85;
+}
+
+.button a{
+    margin: 0;
+    text-decoration: none;
+    color: #CBD5E1;
 }
 
 aside{
@@ -68,6 +75,7 @@ aside #title{
     justify-content: center;
 
     margin: 2rem 0rem;
+    height: 3rem;
     width: 100%;
 }
 
@@ -108,16 +116,22 @@ aside nav{
 aside nav ul{
     list-style: none;
     padding: 0;
-}
+
+}   
 
 aside nav ul li{
     position: relative;
+    padding: 0rem 10%;
+    margin: 0.5rem 0;
+
+    transition: display var(--delay) var(--timing);
+
+}
+
+aside nav ul li a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 0rem 0.5rem 1.5rem;
-    margin: 1rem 0rem;
-
 }
 
 aside nav ul li #pointer{
@@ -125,13 +139,17 @@ aside nav ul li #pointer{
     position: absolute;
     left: 0;
     height: 100%;
-    width: 1.5%;
+    width: 0.3rem;
     margin: 0;
 }
 
 aside nav ul li:hover{
     background: #3F4049;
 }
+aside nav ul li[chosen]{
+    background: #3F4049;
+}
+
 
 aside nav ul li *{
     margin: 0 1rem;
